@@ -3,10 +3,12 @@
 <script>
 var D = new Date();
 var NamHienTai = D.getFullYear();
+/* * lấy năm hiện tại từ đối tượng ngày tháng D và lưu vào biến NamHienTai. */ */
 var NamSinh;
 
 do {
     NamSinh = prompt("Bạn sinh năm bao nhiêu?");
+    /* prompt() dùng để tạo một hộp thoại cho người dùng nhập dữ liệu. */
 }
 while (isNaN(NamSinh) || NamSinh <= 0 || NamSinh > NamHienTai);
 
